@@ -1,0 +1,49 @@
+{
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "eslint:recommended",
+        "plugin:@next/next/recommended",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended",
+        "plugin:tailwindcss/recommended"
+    ],
+    "plugins": ["tailwindcss"],
+    "rules": {
+        "no-console": "warn",
+        "no-unused-vars": "error",
+        "eqeqeq": "error",
+        "curly": "error",
+        "react/prop-types": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/react-in-jsx-scope": "off",
+        "tailwindcss/no-custom-classname": "off",
+        "tailwindcss/migration-from-tailwind-2": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "doubleQuote": true,
+                "semi": true,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "trailingComma": "all",
+                "singleQuote": true,
+                "importOrder": ["^@components/(.*)$", "^@pages/(.*)$", "^[./]"],
+                "importOrderSeparation": true,
+                "importOrderSortSpecifiers": true,
+                 "endOfLine": "auto"
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "tailwindcss": {
+            "callees": ["classnames", "clsx"],
+            "prependCustom": true,
+            "removeDuplicates": true
+        }
+    }
+}

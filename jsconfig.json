@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "target": "es2015",
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+    "include": ["next-env.d.js", "**/*.js", "**/*.jsx", "next.config.mjs"],
+    "exclude": ["node_modules"]
+}

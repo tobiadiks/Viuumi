@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+   
+    background:#000;
+  }
+
+.splide__pagination__page {
+  background-color: #1b1b1b;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #0061FE;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+  width: 1rem;
+}
+
+.image-container {
+
+  width: 100%;
+
+  > div {
+    position: unset !important;
+  }
+
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
