@@ -43,8 +43,8 @@ export default function Navbar() {
                 <Image
                     className="cursor-pointer"
                     alt="logo"
-                    height={logoSrc == '/mobile-logo.svg' ? 70 : 150}
-                    width={logoSrc == '/mobile-logo.svg' ? 70 : 150}
+                    height={logoSrc === '/mobile-logo.svg' ? 70 : 150}
+                    width={logoSrc === '/mobile-logo.svg' ? 70 : 150}
                     src={logoSrc}
                 />
                 <ul className="hidden cursor-pointer gap-10 font-bold text-lighter-gray lg:flex">
