@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import Image from 'next/image';
 import { useState } from 'react';
 import CountdownTimer from '@/components/countdown-timer';
@@ -20,15 +21,15 @@ const robotoSerif = Roboto_Serif({
 export default function Hero() {
     const t = useI18n();
     const [video, setVideo] = useState(false);
-    const [form, setForm] = useState(false);
+    // const [form, setForm] = useState(false);
 
     const toggleVideo = () => {
         setVideo((prev) => !prev);
     };
 
-    const join = () => {
-        setForm(true);
-    };
+    // const join = () => {
+    //     setForm(true);
+    // };
 
     return (
         <div
@@ -40,7 +41,7 @@ export default function Hero() {
         >
             <div className="grid grid-cols-1 bg-[url('/bg-grid.svg')] bg-center bg-repeat lg:grid-cols-3 lg:bg-cover lg:pr-4">
                 <div
-                    className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom lg:bg-center bg-no-repeat py-10 text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] ${spaceGrotesk.className}`}
+                    className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom bg-no-repeat py-10 text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] lg:bg-center ${spaceGrotesk.className}`}
                 >
                     <div className="relative z-20 w-full px-8 pt-20">
                         <p className="text-center text-[32px] font-bold lg:text-left lg:text-[64px]">
