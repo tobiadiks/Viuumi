@@ -63,7 +63,6 @@ export default function Hero() {
                         </p>
                         <div className="flex items-start justify-center gap-8 pt-20 lg:justify-start">
                             <Button
-                                onClick={() => join()}
                                 color="primary"
                                 children={t('landing.hero.join_waitlist')}
                             />
