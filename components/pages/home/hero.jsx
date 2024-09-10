@@ -41,27 +41,29 @@ export default function Hero() {
         >
             <div className="grid grid-cols-1 bg-[url('/bg-grid.svg')] bg-center bg-repeat lg:grid-cols-3 lg:bg-cover lg:pr-4">
                 <div
-                    className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom bg-no-repeat text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] lg:bg-center lg:py-10 ${spaceGrotesk.className}`}
+                    className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom bg-no-repeat text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] lg:bg-center lg:py-0 `}
                 >
-                    <div className="relative z-20 w-full px-4 lg:px-8 lg:pt-20">
-                        <p className="text-center text-[32px] font-bold lg:text-left lg:text-[64px]">
+                    <div className="relative z-20 w-full px-4 pt-16 lg:px-8 lg:pt-16">
+                        <p className="text-center text-2xl font-bold  leading-10 lg:text-left lg:text-5xl">
                             {t('landing.hero.title')}{' '}
-                            <span className=" inline-flex flex-col items-center gap-1 text-[64px] text-brand-blue">
+                            <span
+                                className={`inline-flex flex-col items-center gap-1  text-5xl text-brand-blue lg:text-5xl ${spaceGrotesk.className}`}
+                            >
                                 <span>{t('landing.hero.title_highlight')}</span>
                                 <Image
                                     alt="line"
                                     src="/line.svg"
                                     height={100}
-                                    width={150}
+                                    width={100}
                                 />
                             </span>
                         </p>
                         <p
-                            className={`mt-16 text-center text-[14px] font-[400]  leading-[32px] lg:w-3/4 lg:text-left lg:text-[20px] ${robotoSerif.className}`}
+                            className={`leading-16  mt-8 text-center text-sm  font-light lg:w-3/4 lg:text-left lg:text-sm ${robotoSerif.className}`}
                         >
                             {t('landing.hero.description')}
                         </p>
-                        <div className="flex items-start justify-center gap-8 pt-20 lg:justify-start">
+                        <div className="grid grid-cols-2  gap-4 pt-8 lg:w-1/2 ">
                             <Button
                                 color="primary"
                                 children={t('landing.hero.join_waitlist')}

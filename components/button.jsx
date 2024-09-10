@@ -1,5 +1,9 @@
+import { Space_Grotesk } from 'next/font/google';
 import React from 'react';
-
+const spaceGrotesk = Space_Grotesk({
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700'],
+});
 const Button = ({
     playButton = false,
     children,
@@ -10,10 +14,10 @@ const Button = ({
     disabled = false,
 }) => {
     const baseClasses =
-        'flex  whitespace-nowrap justify-center gap-3 lg:text-[20px]  text-[14px] items-center font-semibold focus:outline-none text-center';
+        'flex  whitespace-nowrap justify-center gap-3 lg:text-sm  text-sm items-center font-semibold focus:outline-none text-center';
     const sizeClasses = {
-        small: 'px-[24px] lg:py-[20px] py-[10px]  lg:min-w-48 min-w-40 w-auto ',
-        large: 'lg:min-w-[533px] lg:h-[74px] min-w-[280px] h-[50px]',
+        small: 'px-8 py-4 ',
+        large: 'px-8 py-4 ',
     };
     const colorClasses = {
         primary: 'bg-brand-blue text-white',
@@ -24,7 +28,7 @@ const Button = ({
 
     return (
         <button
-            className={` ${baseClasses} ${sizeClasses[size]} ${colorClasses[color]} ${roundedClass} ${disabledClass} `}
+            className={` ${baseClasses} ${sizeClasses[size]} ${colorClasses[color]} ${roundedClass} ${disabledClass} ${spaceGrotesk.className}`}
             onClick={onClick}
             disabled={disabled}
         >

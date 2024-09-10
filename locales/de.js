@@ -17,7 +17,7 @@ export default {
             title_highlight: 'Wachsen',
             description:
                 'Bei Viuumi sorgen wir dafür, dass jede produktverkaufende, dienstleistende Marke und ihre Produkte oder Dienstleistungen sichtbar werden. Marketing und Werbung war noch nie einfacher!',
-            join_waitlist: 'Treten Sie unserer Warteliste bei',
+            join_waitlist: 'Warteliste',
             watch_video: 'Video ansehen',
         },
         service: {
