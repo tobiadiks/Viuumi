@@ -41,9 +41,9 @@ export default function Hero() {
         >
             <div className="grid grid-cols-1 bg-[url('/bg-grid.svg')] bg-center bg-repeat lg:grid-cols-3 lg:bg-cover lg:pr-4">
                 <div
-                    className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom bg-no-repeat py-10 text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] lg:bg-center ${spaceGrotesk.className}`}
+                    className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom bg-no-repeat text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] lg:bg-center lg:py-10 ${spaceGrotesk.className}`}
                 >
-                    <div className="relative z-20 w-full px-8 pt-20">
+                    <div className="relative z-20 w-full px-4 lg:px-8 lg:pt-20">
                         <p className="text-center text-[32px] font-bold lg:text-left lg:text-[64px]">
                             {t('landing.hero.title')}{' '}
                             <span className=" inline-flex flex-col items-center gap-1 text-[64px] text-brand-blue">

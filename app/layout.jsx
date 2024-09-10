@@ -1,8 +1,11 @@
-import { Inter } from 'next/font/google';
+import { Roboto_Serif } from 'next/font/google';
 import '@splidejs/react-splide/css/skyblue';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const robotoSerif = Roboto_Serif({
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700'],
+});
 
 export const metadata = {
     title: '',
@@ -17,7 +20,7 @@ export default function RootLayout({ children }) {
             suppressHydrationWarning
             style={{ scrollBehavior: 'smooth' }}
         >
-            <body className={inter.className}>{children}</body>
+            <body className={robotoSerif.className}>{children}</body>
         </html>
     );
 }
