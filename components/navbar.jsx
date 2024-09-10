@@ -65,7 +65,7 @@ export default function Navbar() {
                     </li>
                 </ul>
                 <Button
-                    size="small"
+                    size="large"
                     color="primary"
                     children={t('landing.nav.sign_up')}
                 />

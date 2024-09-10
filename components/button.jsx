@@ -17,7 +17,7 @@ const Button = ({
         'flex  whitespace-nowrap justify-center gap-3 lg:text-sm  text-sm items-center font-semibold focus:outline-none text-center';
     const sizeClasses = {
         small: 'px-0 py-4 ',
-        large: 'px-0 py-4 ',
+        large: 'px-8 py-4 ',
     };
     const colorClasses = {
         primary: 'bg-brand-blue text-white',
