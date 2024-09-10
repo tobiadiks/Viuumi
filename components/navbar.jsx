@@ -39,7 +39,7 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="top-0 z-50  flex items-center justify-between bg-black px-2 py-8 lg:sticky lg:px-8">
+            <div className="top-0 z-50  flex items-center justify-between bg-black px-4 py-8 lg:sticky lg:px-8">
                 <Image
                     className="cursor-pointer"
                     alt="logo"
