@@ -17,7 +17,7 @@ export default {
             title_highlight: 'Grow',
             description:
                 'At Viuumi we Ensure that every products selling, service rendering brand and their products or services find visibility. Marketing and Advertising has never been easier!',
-            join_waitlist: 'Join Our Waiting List',
+            join_waitlist: 'Join Waiting List',
             watch_video: 'Watch Video',
         },
         service: {
