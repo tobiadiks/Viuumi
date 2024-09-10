@@ -44,9 +44,9 @@ export default function Hero() {
                     className={`bg-[url('/mobile-ellipse.svg')] bg-cover bg-bottom bg-no-repeat text-white lg:col-span-2 lg:bg-[url('/desktop-ellipse.svg')] lg:bg-center lg:py-0 `}
                 >
                     <div className="relative z-20 w-full px-4 pt-16 lg:px-8 lg:pt-16">
-                        <p className="text-center text-2xl font-bold  leading-10 lg:text-left lg:text-5xl">
-                            {t('landing.hero.title')}{' '}
-                            <span
+                        <div className="text-center text-2xl font-bold flex flex-col lg:flex-row space-y-0 lg:space-x-4 leading-10 lg:text-left lg:text-5xl">
+                            <div>{t('landing.hero.title')}{' '}</div>
+                            <div
                                 className={`inline-flex flex-col items-center gap-1  text-5xl text-brand-blue lg:text-5xl ${spaceGrotesk.className}`}
                             >
                                 <span>{t('landing.hero.title_highlight')}</span>
@@ -56,8 +56,8 @@ export default function Hero() {
                                     height={100}
                                     width={100}
                                 />
-                            </span>
-                        </p>
+                            </div>
+                        </div>
                         <p
                             className={`leading-16  mt-8 text-center text-sm  font-light lg:w-3/4 lg:text-left lg:text-sm ${robotoSerif.className}`}
                         >
