@@ -1,8 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Button = ({
-    icon,
     playButton = false,
     children,
     onClick,

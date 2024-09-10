@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-const TeamCard = ({image, name, description}) => {
+const TeamCard = ({ image, name, description }) => {
     return (
         <div className="flex flex-col items-start justify-center gap-4">
             <div className="flex items-end justify-center">
